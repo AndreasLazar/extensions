@@ -1,3 +1,3 @@
 # Lazar.Extensions
 
-A collection of usefulle c# extension methods.
+A collection of usefull c# extension methods.
