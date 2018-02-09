@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Extensions
+namespace Lazar.Extensions
 {
     public static class DictionaryExt
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 
-namespace Extensions
+namespace Lazar.Extensions
 {
     public static class StringExt
     {
@@ -23,5 +23,10 @@ namespace Extensions
 
         public static string RemoveFirstChar(this string str)
             => str.RemoveFirstXChars(1);
+
+        public static T ToEnum<T>(this string str)
+            => string.IsNullOrEmpty(str) ? 
+                default(T) : 
+                (T)Enum.Parse(typeof(T), str);
     }
 }

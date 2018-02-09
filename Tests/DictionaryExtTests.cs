@@ -1,9 +1,9 @@
-using Extensions;
+using Lazar.Extensions;
 using System;
 using System.Collections.Generic;
 using Xunit;
 
-namespace Tests
+namespace Lazar.Tests
 {
     public class DictionaryExtTests
     {

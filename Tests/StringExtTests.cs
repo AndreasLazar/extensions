@@ -1,11 +1,17 @@
-using Extensions;
+using Lazar.Extensions;
 using System;
 using Xunit;
 
-namespace Tests
+namespace Lazar.Tests
 {
     public class StringExtTests
     {
+        private enum Color
+        {
+            Green = 1,
+            Blue = 2
+        }
+
         [Fact]
         public void TestSplitCamelCase()
         {
@@ -72,6 +78,16 @@ namespace Tests
             string str = "Sonne";
             string expected = string.Empty;
             string actual = str.RemoveFirstXChars(20);
+
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void TestToEnum()
+        {
+            string str = "Green";
+            Color expected = Color.Green;
+            Color actual = str.ToEnum<Color>();
 
             Assert.Equal(expected, actual);
         }

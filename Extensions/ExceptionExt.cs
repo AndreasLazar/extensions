@@ -1,6 +1,6 @@
 using System;
 
-namespace Extensions
+namespace Lazar.Extensions
 {
     public static class ExceptionExt
     {

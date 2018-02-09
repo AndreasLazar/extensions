@@ -1,8 +1,8 @@
-using Extensions;
+using Lazar.Extensions;
 using System;
 using Xunit;
 
-namespace Tests
+namespace Lazar.Tests
 {
     public class DateTimeExtTests
     {
